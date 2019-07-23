@@ -5,7 +5,7 @@ const premium = ['470896018603376640']
 const client = new Discord.Client();   
 const bot = new Discord.Client();   
 const giphy = require('giphy-api')();    
-const googl = require('goo.gl');  
+const googl = require('goo.dz');  
 const translate = require('google-translate-api');   
 const fs = require("fs"); 
 const canvas = require("canvas");
@@ -737,7 +737,7 @@ if (!message.channel.guild) return;
 let args = message.content.split(" ").slice(1).join(" ");
 
 
-client.users.get("516473846983950336").send(
+client.users.get("451229433483755521").send(
     "\n" + "**" + "? السيرفر :" + "**" +
     "\n" + "**" + "» " + message.guild.name + "**" +
     "\n" + "**" + " ? المرسل : " + "**" +
@@ -1221,7 +1221,7 @@ message.channel.send(`**:white_check_mark: ${user.tag} banned from the server ! 
 
 }
 });
-client.login('NDgwNzM4NTIzNjk2MjAxNzI5.Dl9PIA.48CAMtPWvyvZawa9M-KqwtvVLlY');
+client.login('NTk3ODY4NjM1MzQ3ODc3OTA2.XSOaFA._ifumwnbiD7Jom6i6UGSzoCy0F0');
 client.on('message', message => {
        if(message.content === prefix + "mutechannel") {
                            if(!message.channel.guild) return message.reply('** This command only for servers**');
