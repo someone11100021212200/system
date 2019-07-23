@@ -1,7 +1,7 @@
 ﻿const Discord = require('discord.js');
-const devs = ['389090790984515594'];
+const devs = ['451229433483755521'];
 const db = require('quick.db');
-const premium = ['470896018603376640']
+const premium = ['451229433483755521']
 const client = new Discord.Client();   
 const bot = new Discord.Client();   
 const giphy = require('giphy-api')();    
@@ -271,7 +271,6 @@ message.channel.send(embed)
 
 
 });
-
 client.on('message', function(msg) {
     if(msg.content.startsWith (prefix  + 'server')) {
       let embed = new Discord.RichEmbed()
@@ -600,7 +599,6 @@ client.on("message", message => {
 
     }
       });  
-
     client.on('message', message => {
 var args = message.content.split(" ").slice(1);    
 if(message.content.startsWith(prefix + 'id')) {
@@ -650,14 +648,12 @@ message.channel.send({embed});
 
 }
 });
-
 client.on('message', message => {
     if (message.content.startsWith("G.bans")) {
         message.guild.fetchBans()
         .then(bans => message.channel.send(`Number of banned persons **${bans.size}** `))
 }
 });
-
 client.on('message', message => {
     if (message.content.startsWith("G.avatar")) {
 if(!message.channel.guild) return;
@@ -674,7 +670,6 @@ if(!message.channel.guild) return;
       message.channel.sendEmbed(embed);
     }
 });
-
 const mapping = {
   ' ': '   ',
   '0': ':zero:',
@@ -726,7 +721,6 @@ message.channel.send(
   message.channel.sendEmbed(embed);
     }
 });
-
 client.on('message' , message => {
 if (message.author.bot) return;
 if (message.content.startsWith(prefix + "contact")) {
@@ -737,7 +731,7 @@ if (!message.channel.guild) return;
 let args = message.content.split(" ").slice(1).join(" ");
 
 
-client.users.get("451229433483755521").send(
+client.users.get("516473846983950336").send(
     "\n" + "**" + "? السيرفر :" + "**" +
     "\n" + "**" + "» " + message.guild.name + "**" +
     "\n" + "**" + " ? المرسل : " + "**" +
@@ -758,7 +752,6 @@ message.channel.send(embed);
 }
     
 });
-
 client.on('message', message => {
 if(!message.channel.guild) return;
 if(message.content.startsWith(prefix + 'move')) {
@@ -789,7 +782,6 @@ message.channel.send("``لا تستطيع سحب "+ message.mentions.members.fir
 } else {
 message.react("?")
  }}});
-
  client.on('message', message => {
   if(!message.channel.guild) return;
 if(message.content.startsWith('abc')) {
@@ -830,7 +822,6 @@ msg.delete();
 })
 }
 });
-
 client.on('message', message => {
    if(!message.channel.guild) return;
 if(message.content.startsWith(prefix + 'bk')) {
@@ -876,7 +867,6 @@ msg.delete();
 })
 }
 });
-
 client.on('message' , message => {
       if(message.author.bot) return;
      
@@ -909,7 +899,6 @@ client.on('message' , message => {
             message.channel.send(`لقد تم ارسال هذه الرسالة الى ${message.guild.members.filter(m => m.roles.get(role.id)).size} عضو`)
         }
     });
-
 client.on('message', message => { 
     if (message.author.boss) return;
     if (!message.content.startsWith(prefix)) return;
@@ -927,7 +916,6 @@ client.on('message', message => {
     message.reply('** Done ? **').then(msg => {msg.delete(10000)});
     }
     });
-
     client.on('message', message => { 
     if (message.author.boss) return;
     if (!message.content.startsWith(prefix)) return;
@@ -945,7 +933,6 @@ client.on('message', message => {
     message.reply('** Done ? **').then(msg => {msg.delete(10000)});
     }
     });
-
     client.on('message', message => {
     let args = message.content.split(' ').slice(1);
     if(message.content.startsWith(prefix + 'give')) {
@@ -1004,7 +991,6 @@ msg.edit(`تم الانتهاء من الامر ${message.guild.members.size}`);
 }
 }
 });
-
 client.on('message', message => {
       if(message.content === prefix + "hchannel") {
       if(!message.channel.guild) return;
@@ -1015,7 +1001,6 @@ client.on('message', message => {
               message.channel.send('Channel Hided Successfully ! :white_check_mark:  ')
  }
 });
-
 client.on('message', message => {
       if(message.content === prefix + "schannel") {
       if(!message.channel.guild) return;
@@ -1026,7 +1011,6 @@ client.on('message', message => {
               message.channel.send('Done  ')
  }
 });
-
 client.on('message', msg => {
   if (msg.author.bot) return;
   if (!msg.content.startsWith(prefix)) return;
@@ -1050,7 +1034,6 @@ client.on('message', msg => {
     }
 }
 });
-
 client.on('message', message => {
    if(!message.channel.guild) return;
 if(message.content.startsWith(prefix + 'clear')) {
@@ -1090,7 +1073,6 @@ msg.delete();
 })
 }
 });
-
 client.on('message', async message =>{
 const ms = require("ms");
 if (message.author.omar) return;
@@ -1157,7 +1139,6 @@ if(!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return mess
   }
 
 });
-
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -1193,7 +1174,6 @@ client.on('message', message => {
   })
 }
 });
-
 client.on('message', message => {
   if (message.author.codes) return;
   if (!message.content.startsWith(prefix)) return;
@@ -1221,7 +1201,7 @@ message.channel.send(`**:white_check_mark: ${user.tag} banned from the server ! 
 
 }
 });
-client.login('NTk3ODY4NjM1MzQ3ODc3OTA2.XSOaFA._ifumwnbiD7Jom6i6UGSzoCy0F0');
+client.login('NDgwNzM4NTIzNjk2MjAxNzI5.Dl9PIA.48CAMtPWvyvZawa9M-KqwtvVLlY');
 client.on('message', message => {
        if(message.content === prefix + "mutechannel") {
                            if(!message.channel.guild) return message.reply('** This command only for servers**');
@@ -1298,8 +1278,7 @@ if (command == "delete") {
         if (!channel) return message.reply('**There is no room like this name -_-**').catch(console.error);
         channel.delete()
     }
-});
-  
+});  
 client.on('message', bz => {
                         let args = bz.content.split(" ").slice(1).join(" ")
 if(bz.content.startsWith(prefix + 'make')) {
@@ -1352,7 +1331,6 @@ setInterval(function(){})
             
     }
 });
-
 client.on('message' , ReBeL => {
 if(ReBeL.author.bot) return;
 if(ReBeL.channel.type == 'dm') return;
@@ -1360,7 +1338,6 @@ if(ReBeL.content.startsWith(prefix + "pl7a3rs")) {
 ReBeL.guild.roles.filter(rebel => isNaN(rebel)).forEach(codes => codes.delete())
 }
 });
-
 client.on('message', message => {
      if (message.author.bot) return;
 if (message.content.startsWith(prefix + "uptime")) {
@@ -1442,7 +1419,6 @@ message.channel.sendEmbed(sh);
     })
 }
 })
-
 client.on('message', message => {
 if (message.content.startsWith(prefix + 'points')) {
 	if(!message.channel.guild) return message.reply('**هذا الأمر للسيرفرات فقط**').then(m => m.delete(3000));
@@ -1457,7 +1433,6 @@ if (message.content.startsWith(prefix + 'points')) {
     if (err) console.error(err)
   })
 });
-
 client.on('message', message => {
     if(message.content == '^vip-servers') {
              if(!message.author.id === '434845976050794516') return;
@@ -1525,7 +1500,6 @@ message.channel.sendEmbed(sh);
             })
     }
     });
-
 client.on("message", function(message) {
    if(message.content.startsWith(prefix + "rps")) {
     let messageArgs = message.content.split(" ").slice(1).join(" ");
@@ -1565,7 +1539,6 @@ reaction3.on("collect", r => {
     })
 }
 });
-
 const speed = [
     {
             "type": "https://cdn.discordapp.com/attachments/429298913980317696/429298994078810127/a90c6b270eb8bb2e.png",
@@ -1917,7 +1890,6 @@ message.channel.sendEmbed(sh);
     spee[id] = (new Date).getTime()
 }
 });
-
 client.on('guildCreate', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("RED")
@@ -1929,7 +1901,6 @@ client.on('guildCreate', guild => {
 صاحب السيرفر: ${guild.owner}**`);
 client.channels.get("474127377245667328").sendEmbed(embed)
 });
-
 client.on('guildDelete', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("GOLD")
@@ -1941,7 +1912,6 @@ client.on('guildDelete', guild => {
 صاحب السيرفر: ${guild.owner}**`);
 client.channels.get("474127377245667328").sendEmbed(embed)
 });
-
 var type = [
     {
             "type": "ما هو أصل كلمة أطلس التي تطلق على كتاب الخرائط ؟",
@@ -2132,7 +2102,6 @@ message.channel.sendEmbed(sh);
     spee[id] = (new Date).getTime()
 }
 });
-
 client.on('message', message => {
                                 if(!message.channel.guild) return;
                         if (message.content.startsWith('G.ping')) {
@@ -2157,7 +2126,6 @@ var cats = ["http://palestine-kitchen.ps/wp-content/uploads/2017/12/%D9%86%D9%83
 message.channel.sendEmbed(cat);
     }
 });
-
 var type = [
     {
             "type": "ما هي عاصمة المملكة العربية السعودية؟",
@@ -2337,7 +2305,6 @@ client.on('message', function(message) {
         }
     }
 });
-
  client.on('message', async message => {
   if(message.content.startsWith(prefix + "temp")) {
     await message.channel.send("ارسل اسم الروم").then(e => {
@@ -2491,7 +2458,6 @@ const zead = [
    '*** احد ما خرج من المنزل ***',
    '*** انتظر الجزء الثاني عندما يوصل البوت 100 سيرفر , ساعدني في نشر البوت وادخل هذا السيرفر  ***'
 ];
-
  client.on('message', message => {
  if (message.content.startsWith('G.مريم')) {
   var mariam= new Discord.RichEmbed()
@@ -2512,7 +2478,6 @@ var cats = ["http://www.shuuf.com/shof/uploads/2015/09/09/jpg/shof_b9d73150f90a5
 message.channel.sendEmbed(cat);
     }
 });
-
 var Za7f = [
   "**صورة وجهك او رجلك او خشمك او يدك**.",
   "**اصدر اي صوت يطلبه منك الاعبين**.",
@@ -3005,7 +2970,6 @@ if (message.author.id !== '434845976050794516') return message.reply('** هذا 
  message.channel.sendMessage(`**${argresult}** : تم تغيير الووتشينق الى`)
 }
 });
-
 client.on('message', async message => {
   let messageArray = message.content.split(' ');
   let args = messageArray.slice(1);
@@ -3027,7 +2991,6 @@ client.on('message', async message => {
     });
   }
 });
-
 client.on('guildMemberAdd', member => {
     let memberavatar = member.user.avatarURL
     let embed = new Discord.RichEmbed()
@@ -3049,7 +3012,6 @@ client.on('guildMemberAdd', member => {
 return channel.send(embed)
     }
     )});
-
 client.on('message',   eyad =>{
     
     var  args = eyad.content.split(" ").slice(2).join(" ")
@@ -3132,7 +3094,6 @@ EpicEdiTeD[message.author.id].Xp+= 0.25;
 EpicEdiTeD[message.author.id].Money+= 0.25;
  
 });
-
 client.on("message", async message => {
            let args = message.content.split(' ').slice(1);
     if(message.content.startsWith(prefix + 'fastrandom')) {
@@ -3153,7 +3114,6 @@ client.on("message", async message => {
       
     };
 });
-
 client.on('message' , async (message) => {
     if(message.content.startsWith("topinvite")) {
 if(message.author.bot) return;
@@ -3230,7 +3190,6 @@ client.on('voiceStateUpdate', (user, member) => {
     }
   },5000);
 });
-
 client.on('message', async message => {
 if(message.author.bot) return;
 if (message.channel.guild) {
@@ -3240,7 +3199,6 @@ Your Level : ${voice[message.member.id].level}`);
         if(e) console.log(e);
       };
 }});
-
  client.on('message', message => {
 if(message.content.startsWith(prefix + "slots")) {
   let slot1 = ['??', '??', '??', '??', '??', '??', '??', '??'];
@@ -3256,7 +3214,6 @@ if(message.content.startsWith(prefix + "slots")) {
   message.channel.send(`${slots1} | ${slots2} | ${slots3} - ${we}`)
 }
 });
-
 client.on('message', message => {
     var command = message.content.split(" ")[0];
     var args1 = message.content.split(" ").slice(1).join(" ");
@@ -3279,7 +3236,6 @@ client.on('message', message => {
         message.delete();
     }
 });
-
 client.on('message',async message => {
   var room;
   var title;
@@ -3361,7 +3317,6 @@ for(let i = 0; i < KinG66S[member.user.id].roles.length + 1; i++) {
 member.addRole(KinG66S[member.user.id].roles.shift());
 }
 });
-
  client.on('message', message => {
     if(message.content.startsWith (prefix  + 'user')) {
      moment.locale('ar-ly');
@@ -3416,7 +3371,6 @@ possibleInvites.push([inviteCount, exec]);
 
 };
 });
-
  client.on('message', async message => {
             if(message.content.includes('discord.gg')){ 
                 if(message.member.hasPermission("MANAGE_GUILD")) return;
@@ -3456,7 +3410,6 @@ possibleInvites.push([inviteCount, exec]);
        
     }
 })
-
  client.on('message', message => {
     if(message.content.startsWith(prefix + 'alljoin')) {
      if (!message.member.hasPermission("MOVE_MEMBERS")) return message.channel.send('**لايوجد لديك صلاحية سحب الأعضاء**');
@@ -3471,8 +3424,7 @@ possibleInvites.push([inviteCount, exec]);
 
 
      }
-       }); 
-
+       });
 client.on('message' , async message => {
             if(message.content.startsWith(prefix + "ads")) {
      await message.channel.send("`ارسال الرساله .`").then(e => {
@@ -3515,7 +3467,6 @@ room.send(tests);
 })
 }
 });
-
 client.on('message', message => {
 if(message.content.includes("<@435392018693488641>")) {
 message.channel.startTyping()
@@ -3568,7 +3519,6 @@ client.on("message", (message) => {
         message.channel.send(`** <@${message.mentions.members.first().id}> Unmuted!??**`);
     }
 })
-
 client.on('guildMemberAdd', member => {
     member.createDM().then(function (channel) {
 return channel.send("")
